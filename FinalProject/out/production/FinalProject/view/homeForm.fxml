@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <ImageView fx:id="context" fitHeight="500.0" fitWidth="750.0" layoutY="-2.0" opacity="0.74" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/01.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="149.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#121036" layoutX="316.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS">
+         <font>
+            <Font name="Arial Black" size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="405.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management System">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Separator layoutX="175.0" layoutY="73.0" opacity="0.68" prefHeight="0.0" prefWidth="435.0" />
+      <JFXButton layoutX="411.0" layoutY="373.0" onAction="#managerLogin" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #10ac84" text="Management Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="ulogin" layoutX="114.0" layoutY="373.0" onAction="#userLogin" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #10ac84" text="User Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="wishID" layoutX="290.0" layoutY="104.0" prefHeight="33.0" prefWidth="248.0" textFill="#540c0c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="250.0" layoutY="185.0" prefHeight="54.0" prefWidth="153.0" text="Date" textFill="#1c0749">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeID" layoutX="421.0" layoutY="186.0" prefHeight="54.0" prefWidth="208.0" text="Time" textFill="#1c0749">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="179.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today Is :" wrappingWidth="85.13671875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Separator layoutX="406.0" layoutY="187.0" orientation="VERTICAL" prefHeight="46.0" prefWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#475a6b" height="54.0" layoutX="147.0" layoutY="183.0" opacity="0.41" stroke="#475a6b" strokeType="INSIDE" width="449.0" />
+   </children>
+</AnchorPane>

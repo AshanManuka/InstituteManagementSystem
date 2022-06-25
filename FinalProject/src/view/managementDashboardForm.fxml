@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #222f3e" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementDashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="2.0" layoutY="1.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="895.0" />
+      <Label fx:id="timeID" layoutX="731.0" layoutY="9.0" prefHeight="30.0" prefWidth="156.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="542.0" layoutY="9.0" prefHeight="30.0" prefWidth="163.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="228.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="478.0" layoutY="119.0" onAction="#studentPage" prefHeight="70.0" prefWidth="420.0" style="-fx-background-color: #1B9CFC" text="Student" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="478.0" layoutY="259.0" onAction="#budgetPage" prefHeight="70.0" prefWidth="420.0" style="-fx-background-color: #2ed573" text="Budget" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="478.0" layoutY="189.0" onAction="#teacherPage" prefHeight="70.0" prefWidth="420.0" style="-fx-background-color: #4b4b4b" text="Teacher" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="23.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Manager,">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="DARKEN" fitHeight="181.0" fitWidth="225.0" layoutX="61.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/45.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="home" layoutX="479.0" layoutY="487.0" onAction="#logOutbtn" prefHeight="82.0" prefWidth="420.0" style="-fx-background-color: #c0392b" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="479.0" layoutY="50.0" onAction="#employeePage" prefHeight="70.0" prefWidth="420.0" style="-fx-background-color: #F97F51" text="Employee" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="478.0" layoutY="395.0" onAction="#userDashboardPage" prefHeight="70.0" prefWidth="420.0" style="-fx-background-color: #F79F1F" text="User Dashboard" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="478.0" layoutY="325.0" onAction="#newUserPage" prefHeight="70.0" prefWidth="420.0" style="-fx-background-color: #5f27cd" text="New System User" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

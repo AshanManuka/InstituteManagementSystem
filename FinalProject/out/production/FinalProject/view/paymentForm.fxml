@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="570.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="1.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="898.0" />
+      <Label fx:id="timeID" layoutX="758.0" layoutY="9.0" prefHeight="30.0" prefWidth="132.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="597.0" layoutY="9.0" prefHeight="30.0" prefWidth="143.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="228.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="smallContext" layoutX="156.0" layoutY="99.0" prefHeight="445.0" prefWidth="600.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="31.0" stroke="BLACK" strokeType="INSIDE" style="-fx-border-color: black" width="57.0" />
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="39.0" layoutY="4.0" onMouseClicked="#goToBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-page.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="userSalaryId" layoutX="673.0" layoutY="47.0" onAction="#userSalary" prefHeight="44.0" prefWidth="226.0" style="-fx-background-color: #1B9CFC" text="User Salary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="employeeSalaryID" layoutX="450.0" layoutY="47.0" onAction="#employeeSalary" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #1B9CFC" text="Employee Salary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="teacherPaymentID" layoutX="222.0" layoutY="47.0" onAction="#teacherPayment" prefHeight="44.0" prefWidth="227.0" style="-fx-background-color: #1B9CFC" text="Teacher Salary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="studentPaymentID" layoutY="47.0" onAction="#studentPayment" prefHeight="44.0" prefWidth="222.0" style="-fx-background-color: #1B9CFC" text="Student Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

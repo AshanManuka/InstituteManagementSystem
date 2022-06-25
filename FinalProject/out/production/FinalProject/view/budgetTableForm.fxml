@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BudgetTableFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="2.0" layoutY="1.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="895.0" />
+      <Label fx:id="timeID" layoutX="757.0" layoutY="11.0" prefHeight="30.0" prefWidth="130.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="568.0" layoutY="11.0" prefHeight="30.0" prefWidth="163.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="229.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="41.0" layoutX="37.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" style="-fx-border-color: black" width="52.0" />
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="41.0" layoutY="3.0" onMouseClicked="#goToBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-page.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="504.0" layoutY="164.0" onAction="#doneBtn" prefHeight="35.0" prefWidth="301.0" style="-fx-background-color: #1B9CFC" text="Find">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="budgetTable" layoutX="5.0" layoutY="59.0" prefHeight="495.0" prefWidth="434.0">
+        <columns>
+            <TableColumn fx:id="budgetDescribe" prefWidth="148.0" text="Description" />
+            <TableColumn fx:id="budgetType" prefWidth="60.0" text="Type" />
+            <TableColumn fx:id="budgetYear" prefWidth="70.0" text="Year" />
+            <TableColumn fx:id="budgetMonth" prefWidth="69.0" text="Month" />
+            <TableColumn fx:id="budgetAmount" prefWidth="86.0" text="Amount" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="yearBox" layoutX="504.0" layoutY="99.0" prefHeight="25.0" prefWidth="106.0" />
+      <Text layoutX="451.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="monthBox" layoutX="736.0" layoutY="100.0" prefHeight="25.0" prefWidth="106.0" />
+      <Text layoutX="661.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="499.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="incomeLbl" layoutX="579.0" layoutY="280.0" prefHeight="31.0" prefWidth="181.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Text layoutX="523.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="costLbl" layoutX="580.0" layoutY="353.0" prefHeight="31.0" prefWidth="181.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Text layoutX="515.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="profitLbl" layoutX="580.0" layoutY="434.0" prefHeight="31.0" prefWidth="181.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

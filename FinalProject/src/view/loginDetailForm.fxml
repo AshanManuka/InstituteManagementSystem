@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginDetailFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="1.0" layoutY="1.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="900.0" />
+      <Label fx:id="timeID" layoutX="681.0" layoutY="10.0" prefHeight="30.0" prefWidth="171.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="527.0" layoutY="10.0" prefHeight="30.0" prefWidth="163.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="229.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="26.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" style="-fx-border-color: black" width="57.0" />
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="34.0" layoutY="3.0" onMouseClicked="#goToBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-page.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="loginTable" layoutX="36.0" layoutY="68.0" prefHeight="458.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="userId" prefWidth="258.3333282470703" text="User Id" />
+          <TableColumn fx:id="loginDate" prefWidth="297.0" text="Login Date" />
+            <TableColumn fx:id="loginTime" prefWidth="263.0" text="Login Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

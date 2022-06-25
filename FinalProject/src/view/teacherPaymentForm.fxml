@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherPaymentFormController">
+   <children>
+      <JFXTextField fx:id="teacherId" focusColor="#090e1e" labelFloat="true" layoutX="199.0" layoutY="103.0" prefHeight="32.0" prefWidth="299.0" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="420.0" layoutY="385.0" onAction="#setPayment" prefHeight="36.0" prefWidth="145.0" style="-fx-background-color: #1B9CFC" text="Done">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="99.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="145.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="128.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="Year" focusColor="#090e1e" labelFloat="true" layoutX="199.0" layoutY="162.0" prefHeight="32.0" prefWidth="299.0" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="month" focusColor="#090e1e" labelFloat="true" layoutX="199.0" layoutY="218.0" prefHeight="32.0" prefWidth="299.0" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="amount" focusColor="#090e1e" labelFloat="true" layoutX="199.0" layoutY="277.0" prefHeight="32.0" prefWidth="299.0" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Text fill="#5e1616" layoutX="55.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Salary">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="263.0" layoutY="385.0" onAction="#cancelBtn" prefHeight="36.0" prefWidth="145.0" style="-fx-background-color: #1B9CFC" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

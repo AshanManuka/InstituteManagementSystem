@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SetbudgetFormController">
+   <children>
+      <Text layoutX="80.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="desc" focusColor="#1d2d5e" layoutX="197.0" layoutY="47.0" onKeyReleased="#keyAction" prefHeight="25.0" prefWidth="271.0" unFocusColor="#6b1919">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="amountfee" focusColor="#1d2d5e" layoutX="197.0" layoutY="257.0" prefHeight="25.0" prefWidth="271.0" unFocusColor="#6b1919">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addDetail" layoutX="426.0" layoutY="374.0" onAction="#addBudget" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: #1B9CFC" text="Done">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backToGo" layoutX="236.0" layoutY="373.0" onAction="#cancelBtn" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #1B9CFC" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="135.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="Type" focusColor="#1d2d5e" layoutX="197.0" layoutY="106.0" onKeyReleased="#keyAction" prefHeight="25.0" prefWidth="271.0" unFocusColor="#6b1919">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <ComboBox fx:id="yearbox" layoutX="190.0" layoutY="189.0" prefHeight="25.0" prefWidth="115.0" />
+      <Text layoutX="131.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="monthbox" layoutX="395.0" layoutY="190.0" prefHeight="25.0" prefWidth="115.0" />
+      <Text layoutX="329.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

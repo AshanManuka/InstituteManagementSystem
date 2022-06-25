@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateExamFormController">
+   <children>
+      <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Up New Exam">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="127.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="138.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="113.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Students :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="setGrade" focusColor="#081028" layoutX="198.0" layoutY="136.0" prefHeight="25.0" prefWidth="308.0" unFocusColor="#430e0e">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="setDate" focusColor="#081028" layoutX="197.0" layoutY="174.0" prefHeight="25.0" prefWidth="308.0" unFocusColor="#430e0e">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="setDuration" focusColor="#081028" layoutX="197.0" layoutY="221.0" prefHeight="25.0" prefWidth="308.0" unFocusColor="#430e0e">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="setTeacher" focusColor="#081028" layoutX="197.0" layoutY="268.0" prefHeight="25.0" prefWidth="308.0" unFocusColor="#430e0e">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="setStudentsNumber" focusColor="#081028" layoutX="197.0" layoutY="319.0" prefHeight="25.0" prefWidth="308.0" unFocusColor="#430e0e">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="454.0" layoutY="384.0" onAction="#setExams" prefHeight="39.0" prefWidth="127.0" style="-fx-background-color: #1B9CFC" text="Done">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="goToBack" layoutX="300.0" layoutY="384.0" onAction="#goToBack" prefHeight="39.0" prefWidth="127.0" style="-fx-background-color: #1B9CFC" text="Cancel">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="84.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Code :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="examCode" focusColor="#081028" layoutX="198.0" layoutY="91.0" prefHeight="25.0" prefWidth="308.0" unFocusColor="#430e0e">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

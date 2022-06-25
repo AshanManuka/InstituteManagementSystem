@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowExamFormController">
+   <children>
+      <Text layoutX="26.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Grade :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="gradeList" focusColor="#101d43" layoutX="129.0" layoutY="22.0" prefHeight="25.0" prefWidth="139.0" unFocusColor="#3c0d0d" />
+      <TableView fx:id="resultTable" layoutX="8.0" layoutY="75.0" prefHeight="355.0" prefWidth="584.0">
+        <columns>
+          <TableColumn fx:id="examCode" prefWidth="116.0" text="ExamCode" />
+          <TableColumn fx:id="examDate" prefWidth="168.0" text="Date" />
+            <TableColumn fx:id="examDuration" prefWidth="89.0" text="Duration" />
+            <TableColumn fx:id="teacherId" prefWidth="98.0" text="Teacher Id" />
+            <TableColumn fx:id="noOfStudent" prefWidth="112.0" text="No Of Student" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

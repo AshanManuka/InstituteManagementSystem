@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SetResultFormController">
+   <children>
+      <Text layoutX="78.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Code :" wrappingWidth="99.998046875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="117.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade :" wrappingWidth="71.998046875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="81.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :" wrappingWidth="99.99804496765137">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result :" wrappingWidth="61.99803590774536">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="grade" focusColor="#172654" layoutX="187.0" layoutY="92.0" prefHeight="27.0" prefWidth="293.0" unFocusColor="#390404">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="examCode" focusColor="#172654" layoutX="187.0" layoutY="146.0" prefHeight="25.0" prefWidth="293.0" unFocusColor="#390404">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="studentID" focusColor="#172654" layoutX="187.0" layoutY="194.0" prefHeight="25.0" prefWidth="293.0" unFocusColor="#390404">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="results" focusColor="#172654" layoutX="187.0" layoutY="249.0" prefHeight="25.0" prefWidth="293.0" unFocusColor="#390404">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text fill="#540c0c" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Results," wrappingWidth="161.998046875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="453.0" layoutY="357.0" onAction="#setResults" prefHeight="27.0" prefWidth="115.0" style="-fx-background-color: #1B9CFC" text="Add Results">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="297.0" layoutY="357.0" onAction="#goToBack" prefHeight="27.0" prefWidth="115.0" style="-fx-background-color: #1B9CFC" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

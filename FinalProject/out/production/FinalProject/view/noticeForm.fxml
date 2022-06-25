@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #222f3e" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NoticeFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="2.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="895.0" />
+      <Label fx:id="timeID" layoutX="749.0" layoutY="9.0" prefHeight="30.0" prefWidth="138.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="584.0" layoutY="9.0" prefHeight="30.0" prefWidth="147.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="228.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="31.0" stroke="BLACK" strokeType="INSIDE" style="-fx-border-color: black" width="57.0" />
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="39.0" layoutY="4.0" onMouseClicked="#goToBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-page.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="38.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Notice ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="inputNotice" layoutX="182.0" layoutY="70.0" prefHeight="73.0" prefWidth="656.0">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </TextArea>
+      <Text fill="WHITE" layoutX="34.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remind Date :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="457.0" layoutY="170.0" onAction="#setNoticeBtn" prefHeight="43.0" prefWidth="213.0" style="-fx-background-color: #1B9CFC" text="Set Notice">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="679.0" layoutY="169.0" onAction="#showNoticeBtn" prefHeight="46.0" prefWidth="160.0" style="-fx-background-color: #1B9CFC" text="Show Notice">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="noticeTable" layoutX="87.0" layoutY="242.0" prefHeight="304.0" prefWidth="759.0">
+        <columns>
+          <TableColumn fx:id="NoticeDate" minWidth="3.0" prefWidth="165.3333282470703" text="Date" />
+            <TableColumn fx:id="NoticeDesc" minWidth="3.0" prefWidth="593.6666717529297" text="Discription" />
+        </columns>
+      </TableView>
+      <TextField fx:id="rDate" layoutX="181.0" layoutY="179.0" prefHeight="30.0" prefWidth="196.0" promptText="DD/MM/YYYY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

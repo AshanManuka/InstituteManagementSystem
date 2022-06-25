@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smalllContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTeacherFormController">
+   <children>
+      <Text layoutX="79.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="teacherID" focusColor="#321515" layoutX="168.0" layoutY="87.0" onKeyReleased="#keyReleaseAction" prefHeight="32.0" prefWidth="303.0" unFocusColor="#0f062f">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="44.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="teacherName" focusColor="#400e0e" layoutX="169.0" layoutY="145.0" onKeyReleased="#keyReleaseAction" prefHeight="32.0" prefWidth="303.0" unFocusColor="#0a0339">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="63.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="teacherAddress" focusColor="#400e0e" layoutX="169.0" layoutY="201.0" onKeyReleased="#keyReleaseAction" prefHeight="32.0" prefWidth="303.0" unFocusColor="#0a0339">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="teacherSalary" focusColor="#400e0e" layoutX="169.0" layoutY="253.0" onKeyReleased="#keyReleaseAction" prefHeight="32.0" prefWidth="303.0" unFocusColor="#0a0339">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="teacherContact" focusColor="#400e0e" layoutX="169.0" layoutY="307.0" onKeyReleased="#keyReleaseAction" prefHeight="32.0" prefWidth="303.0" unFocusColor="#0a0339">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addTeacherId" layoutX="407.0" layoutY="374.0" onAction="#addTeacher" prefHeight="39.0" prefWidth="137.0" style="-fx-background-color: #1B9CFC" text="Done">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#390c0c" layoutX="17.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Teacher Details">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Separator layoutX="41.0" layoutY="50.0" prefHeight="4.0" prefWidth="278.0" />
+   </children>
+</AnchorPane>

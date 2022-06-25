@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AttendanceEmployeemFormController">
+   <children>
+      <Text fill="#571111" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Attendance">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="56.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Year :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="yearBox" focusColor="#102461" layoutX="154.0" layoutY="84.0" prefHeight="25.0" prefWidth="114.0" unFocusColor="#511313" />
+      <Text layoutX="298.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Month :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="monthBox" focusColor="#102461" layoutX="412.0" layoutY="84.0" prefHeight="25.0" prefWidth="114.0" unFocusColor="#511313" />
+      <JFXTextField fx:id="setID" layoutX="154.0" layoutY="203.0" prefHeight="25.0" prefWidth="173.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="98.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="setDate" layoutX="154.0" layoutY="152.0" prefHeight="25.0" prefWidth="173.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="446.0" layoutY="379.0" onAction="#doneBTN" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #1B9CFC" text="Done">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="86.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="presentCBTN" layoutX="156.0" layoutY="273.0" mnemonicParsing="false" text="Present">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="absentCBTN" layoutX="249.0" layoutY="273.0" mnemonicParsing="false" text="Absent">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <JFXButton layoutX="302.0" layoutY="379.0" onAction="#cancelBTN" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #1B9CFC" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

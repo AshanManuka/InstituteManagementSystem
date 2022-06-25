@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateUserFormController">
+   <children>
+      <Text fill="#4d0e0e" layoutX="19.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter User's">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="userID" focusColor="#090e1e" labelFloat="true" layoutX="52.0" layoutY="71.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="175.0" promptText="User ID" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="256.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Separator layoutX="16.0" layoutY="164.0" prefHeight="4.0" prefWidth="563.0" />
+      <JFXButton fx:id="showDetailId" layoutX="386.0" layoutY="118.0" onAction="#checkDetailBTN" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Check ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="250.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="262.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="245.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="247.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="261.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="checkName" focusColor="#090e1e" labelFloat="true" layoutX="308.0" layoutY="74.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="267.0" promptText="User Name" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="107.0" fitWidth="118.0" layoutX="31.0" layoutY="179.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/ambassador.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="newID" focusColor="#0c1c4d" layoutX="330.0" layoutY="185.0" onKeyReleased="#keyReleasedAction" prefHeight="25.0" prefWidth="238.0" unFocusColor="#4d1111">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="newName" focusColor="#0c1c4d" layoutX="330.0" layoutY="224.0" onKeyReleased="#keyReleasedAction" prefHeight="25.0" prefWidth="238.0" unFocusColor="#4d1111">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="newSalary" focusColor="#0c1c4d" layoutX="330.0" layoutY="314.0" onKeyReleased="#keyReleasedAction" prefHeight="25.0" prefWidth="238.0" unFocusColor="#4d1111">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="newAddress" focusColor="#0c1c4d" layoutX="330.0" layoutY="272.0" onKeyReleased="#keyReleasedAction" prefHeight="25.0" prefWidth="238.0" unFocusColor="#4d1111">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="newContact" focusColor="#0c1c4d" layoutX="331.0" layoutY="364.0" onKeyReleased="#keyReleasedAction" prefHeight="25.0" prefWidth="238.0" unFocusColor="#4d1111">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXTextField>
+      <ImageView cache="true" fitHeight="36.0" fitWidth="46.0" layoutX="516.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/edit.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="updateId" layoutX="453.0" layoutY="401.0" onAction="#updateBTN" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

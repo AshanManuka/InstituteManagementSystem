@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeDetailFormController">
+   <children>
+      <TableView fx:id="employeeTable" layoutX="16.0" layoutY="59.0" prefHeight="497.0" prefWidth="864.0">
+        <columns>
+          <TableColumn fx:id="eID" prefWidth="129.66666412353516" text="Emp. ID" />
+          <TableColumn fx:id="eName" prefWidth="250.0" text="Emp. Name" />
+            <TableColumn fx:id="eAddress" prefWidth="203.0" text="Address" />
+            <TableColumn fx:id="eSalary" minWidth="0.0" prefWidth="145.6666259765625" text="Salary" />
+            <TableColumn fx:id="contact" minWidth="0.0" prefWidth="135.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="1.0" layoutY="-1.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="898.0" />
+      <Label fx:id="timeID" layoutX="762.0" layoutY="10.0" prefHeight="30.0" prefWidth="130.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="516.0" layoutY="10.0" prefHeight="30.0" prefWidth="163.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="226.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="41.0" layoutX="34.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" style="-fx-border-color: black" width="52.0" />
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="38.0" layoutY="2.0" onMouseClicked="#goToBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-page.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

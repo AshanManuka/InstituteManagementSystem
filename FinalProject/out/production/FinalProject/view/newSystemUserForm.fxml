@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewSystemUserFormController">
+   <children>
+      <Text layoutX="88.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id :" wrappingWidth="76.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="userId" focusColor="#19264d" layoutX="172.0" layoutY="78.0" prefHeight="31.0" prefWidth="224.0" unFocusColor="#391010">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="35.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :" wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="userName" focusColor="#19264d" layoutX="133.0" layoutY="235.0" prefHeight="31.0" prefWidth="224.0" unFocusColor="#391010">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="36.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :" wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="address" focusColor="#19264d" layoutX="134.0" layoutY="290.0" prefHeight="31.0" prefWidth="224.0" unFocusColor="#391010">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="38.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary :" wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="salary" focusColor="#19264d" layoutX="134.0" layoutY="340.0" prefHeight="31.0" prefWidth="224.0" unFocusColor="#391010">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="40.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :" wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="contact" focusColor="#19264d" layoutX="136.0" layoutY="391.0" prefHeight="31.0" prefWidth="224.0" unFocusColor="#391010">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="420.0" layoutY="236.0" orientation="VERTICAL" prefHeight="317.0" prefWidth="3.0" />
+      <Text layoutX="464.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :" wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="systemUserName" focusColor="#19264d" layoutX="599.0" layoutY="246.0" onKeyReleased="#keyAction" prefHeight="31.0" prefWidth="224.0" unFocusColor="#391010">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="467.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="464.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comfirm Password :" wrappingWidth="155.4700698852539">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXPasswordField fx:id="newPassword" layoutX="600.0" layoutY="303.0" onKeyReleased="#keyAction" prefHeight="25.0" prefWidth="224.0" />
+      <JFXPasswordField fx:id="comfirnPassword" layoutX="635.0" layoutY="358.0" onKeyReleased="#keyAction" prefHeight="25.0" prefWidth="224.0" />
+      <Text layoutX="25.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter " wrappingWidth="124.80338287353516">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="420.0" layoutY="87.0" onAction="#searchUser" prefHeight="32.0" prefWidth="117.0" style="-fx-background-color: #1B9CFC" text="Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addSUserId" layoutX="732.0" layoutY="422.0" onAction="#addSystemUser" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #1B9CFC" text="Add ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="47.0" layoutX="2.0" layoutY="2.0" opacity="0.47" stroke="#144879" strokeType="INSIDE" width="895.0" />
+      <Label fx:id="timeID" layoutX="718.0" layoutY="10.0" prefHeight="30.0" prefWidth="171.0" text="time" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateID" layoutX="539.0" layoutY="10.0" prefHeight="30.0" prefWidth="163.0" text="Date" textFill="#d6d2ee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#f2e6e8" layoutX="228.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS Academy">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#144879" height="42.0" layoutX="11.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" style="-fx-border-color: black" width="53.0" />
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="17.0" layoutY="5.0" onMouseClicked="#goToBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-page.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="232.0" layoutY="442.0" onAction="#deleteSystemUser" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #1B9CFC" text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

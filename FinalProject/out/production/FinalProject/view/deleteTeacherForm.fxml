@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteTeacherFormController">
+   <children>
+      <Text fill="#4d0e0e" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Teacher's">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="checkID" focusColor="#090e1e" labelFloat="true" layoutX="45.0" layoutY="59.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="175.0" promptText="Teacher ID" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="253.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="showDetailId" layoutX="466.0" layoutY="109.0" onAction="#showDetailBTN" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Show Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="checkName" focusColor="#090e1e" labelFloat="true" layoutX="312.0" layoutY="62.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="267.0" promptText="Teacher Name" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="21.0" layoutY="154.0" prefHeight="4.0" prefWidth="563.0" />
+      <Text layoutX="265.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="305.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="288.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="290.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="304.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="showId" layoutX="376.0" layoutY="187.0" prefHeight="27.0" prefWidth="140.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showAddress" layoutX="379.0" layoutY="314.0" prefHeight="27.0" prefWidth="192.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showName" layoutX="376.0" layoutY="228.0" prefHeight="27.0" prefWidth="218.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showContact" layoutX="379.0" layoutY="365.0" prefHeight="27.0" prefWidth="162.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showGrade" layoutX="377.0" layoutY="271.0" prefHeight="27.0" prefWidth="85.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="456.0" layoutY="401.0" onAction="#deleteTeacher" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="107.0" fitWidth="118.0" layoutX="73.0" layoutY="170.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/professor.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

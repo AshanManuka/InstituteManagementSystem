@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="423.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserLoginFormController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Text layoutX="120.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Separator layoutX="81.0" layoutY="66.0" prefWidth="200.0" />
+      <JFXButton fx:id="btnLogin" layoutX="49.0" layoutY="298.0" onAction="#login" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #12CBC4" text="Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="goBack" layoutX="49.0" layoutY="343.0" onAction="#backToHome" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #12CBC4" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="59.0" layoutY="272.0" prefHeight="20.0" prefWidth="234.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" fill="#4fb4c6" height="202.0" layoutX="26.0" layoutY="71.0" opacity="0.09" stroke="#4fb4c6" strokeType="INSIDE" width="299.0" />
+      <Text layoutX="35.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="uNameID" focusColor="#530202" labelFloat="true" layoutX="132.0" layoutY="120.0" onKeyReleased="#keyAction" prefHeight="33.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="uPasswordID" focusColor="#530202" labelFloat="true" layoutX="133.0" layoutY="195.0" onKeyReleased="#keyAction" prefHeight="25.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+   <effect>
+      <Lighting diffuseConstant="1.53" specularConstant="0.0" surfaceScale="0.0">
+         <bumpInput>
+            <Shadow color="#f5ebeb" />
+         </bumpInput>
+         <light>
+            <Light.Distant color="#6daaea" />
+         </light>
+      </Lighting>
+   </effect>
+</AnchorPane>

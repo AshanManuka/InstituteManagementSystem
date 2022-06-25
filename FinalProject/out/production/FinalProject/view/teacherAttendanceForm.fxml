@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherAttendanceFormController">
+   <children>
+      <Text fill="#4d0e0e" layoutX="8.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Teacher's">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="checkID" focusColor="#090e1e" labelFloat="true" layoutX="69.0" layoutY="52.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="256.0" promptText="Teacher ID" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="10.0" layoutY="110.0" prefHeight="3.0" prefWidth="579.0" />
+      <JFXButton fx:id="checkDetailId" layoutX="348.0" layoutY="58.0" onAction="#showDetailBTN" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Show Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="teacherAttendanceTable" layoutX="10.0" layoutY="116.0" prefHeight="319.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="teacherId" prefWidth="125.0" text="Teacher Id" />
+            <TableColumn fx:id="year" prefWidth="113.0" text="Year" />
+            <TableColumn fx:id="month" prefWidth="136.0" text="Month" />
+            <TableColumn fx:id="date" prefWidth="99.0" text="Date" />
+            <TableColumn fx:id="status" prefWidth="105.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

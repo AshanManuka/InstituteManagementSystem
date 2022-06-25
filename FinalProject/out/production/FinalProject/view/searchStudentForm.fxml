@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchStudentFormController">
+   <children>
+      <Text fill="#4d0e0e" layoutX="22.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student ,">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="checkID" focusColor="#090e1e" labelFloat="true" layoutX="55.0" layoutY="59.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="175.0" promptText="Student ID" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="257.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Separator layoutX="19.0" layoutY="154.0" prefHeight="4.0" prefWidth="563.0" />
+      <JFXButton fx:id="showBTId" layoutX="465.0" layoutY="109.0" onAction="#showDetailBTN" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Show Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="262.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="303.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="286.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="288.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="303.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="showId" layoutX="374.0" layoutY="187.0" prefHeight="27.0" prefWidth="140.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showAddress" layoutX="376.0" layoutY="314.0" prefHeight="27.0" prefWidth="192.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showName" layoutX="375.0" layoutY="228.0" prefHeight="27.0" prefWidth="218.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showContact" layoutX="377.0" layoutY="365.0" prefHeight="27.0" prefWidth="162.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showGrade" layoutX="375.0" layoutY="271.0" prefHeight="27.0" prefWidth="85.0" text="Empty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="checkName" focusColor="#090e1e" labelFloat="true" layoutX="311.0" layoutY="60.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="267.0" promptText="Student Name" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="454.0" layoutY="403.0" onAction="#clearBTN" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #1B9CFC" text="Done">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="107.0" fitWidth="118.0" layoutX="71.0" layoutY="167.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/boy.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowResultFormController">
+   <children>
+      <Text layoutX="341.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Grade :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="gradeList" focusColor="#101d43" layoutX="444.0" layoutY="21.0" prefHeight="25.0" prefWidth="113.0" unFocusColor="#3c0d0d" />
+      <TableView fx:id="resultTable" layoutX="20.0" layoutY="64.0" prefHeight="367.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="grade" prefWidth="129.0" text="Grade" />
+          <TableColumn fx:id="examCode" minWidth="0.0" prefWidth="172.0" text="Exam Code" />
+            <TableColumn fx:id="studentId" minWidth="0.0" prefWidth="142.0" text="Student Id" />
+            <TableColumn fx:id="result" minWidth="0.0" prefWidth="118.0" text="Result" />
+        </columns>
+      </TableView>
+      <Text layoutX="27.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student Id :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="308.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&amp;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <JFXTextField fx:id="checkId" layoutX="156.0" layoutY="19.0" />
+   </children>
+</AnchorPane>

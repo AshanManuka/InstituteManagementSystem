@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smallContext" prefHeight="445.0" prefWidth="600.0" style="-fx-background-color: #81ecec" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeAttendanceFormController">
+   <children>
+      <Text fill="#4d0e0e" layoutX="9.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Employee's">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="checkID" focusColor="#090e1e" labelFloat="true" layoutX="72.0" layoutY="57.0" onKeyReleased="#keyAction" prefHeight="32.0" prefWidth="247.0" promptText="Employee ID" unFocusColor="#460c0c">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="11.0" layoutY="114.0" prefHeight="3.0" prefWidth="579.0" />
+      <JFXButton fx:id="checkDetailId" layoutX="339.0" layoutY="63.0" onAction="#showDetailBTN" prefHeight="32.0" prefWidth="117.0" style="-fx-background-color: #1B9CFC" text="Show Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="employeeAttendanceTable" layoutX="11.0" layoutY="127.0" prefHeight="310.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="employeeId" prefWidth="130.0" text="Employee Id" />
+            <TableColumn fx:id="year" prefWidth="106.0" text="Year" />
+            <TableColumn fx:id="month" prefWidth="126.0" text="Month" />
+            <TableColumn fx:id="date" prefWidth="105.0" text="Date" />
+            <TableColumn fx:id="status" prefWidth="111.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
